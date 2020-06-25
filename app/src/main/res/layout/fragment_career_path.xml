@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/backgroundresponsive"
+  tools:context=".CareerPathFragment">
+
+  <!-- TODO: Update blank fragment layout -->
+  <ImageView
+    android:id="@+id/cp"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:layout_marginTop="30dp"
+    android:src="@drawable/psychometric"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+  <androidx.cardview.widget.CardView
+    android:id="@+id/career"
+    android:layout_width="330dp"
+    android:layout_height="340dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="15dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/cp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <TextView
+        android:id="@+id/profile"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Psychometric Test | CareerPariksha"
+        android:textColor="#0b0b0b"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+      <TextView
+        android:id="@+id/textpr"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:padding="5dp"
+        android:text="This is a comprehensive assessment test that includes psychometric analysis, analytical capabilities, personality type, Mix of IQ and EQ parameters, logical reasoning, quantitative and verbal efficiency. The output is a report with visual results and helps you understand your personality along with strengths and areas of improvement. Further, using this test as benchmark, we apply our machine learning intelligence which will guide you to focus on your core competencies so that you can capitalize and accelerate your career."
+        android:textColor="#0b0b0b"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/profile"/>
+      <Button
+        android:id="@+id/psycho"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/regbut"
+        android:text="Talk to counsellors"
+
+        android:textColor="#fff"
+
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/textpr"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

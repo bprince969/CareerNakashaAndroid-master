@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CareerRozgarFragment"
+    android:background="@drawable/backgroundresponsive">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!-- TODO: Update blank fragment layout -->
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/job"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="50dp"
+            android:id="@+id/cp"
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="330dp"
+            android:layout_height="300dp"
+            app:layout_constraintTop_toBottomOf="@id/cp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="10dp"
+            android:id="@+id/career"
+            app:cardCornerRadius="15dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Job/Employment/Internship help | CareerRozgar"
+                    android:textStyle="bold"
+                    android:id="@+id/profile"
+
+                    android:textSize="20sp"
+                    android:textColor="#0b0b0b"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:padding="5dp"
+                    android:text="This feature is like an add-on to the existing products. Once you have utilized our main products CareerPramarsh or CareerDisha. CareerRozgar provides you recommendations and filtered list of career opportunities in the form of jobs/employment/internships. We bring this information from multiple sources like Naukri, Monster, Indeed, IIMJobs, etc. based on your interests."
+                    android:textColor="#0b0b0b"
+                    android:id="@+id/textpr"
+                    app:layout_constraintTop_toBottomOf="@id/profile"
+                    android:textSize="15sp"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/regbut"
+                    android:text="Talk to counsellors"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/textpr"
+                    android:textSize="15sp"
+                    android:id="@+id/rozgar"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

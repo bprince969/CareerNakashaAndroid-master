@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+          android:id="@+id/nav_home"
+          android:icon="@drawable/home"
+          android:title="Home" />
+        <item
+          android:id="@+id/nav_profile"
+          android:icon="@drawable/ic_account_circle_black_24dp"
+          android:title="Profile" />
+        <item
+          android:id="@+id/nav_upload"
+          android:icon="@drawable/ic_file_upload_black_24dp"
+          android:title="Upload" />
+        <item
+          android:id="@+id/nav_councelor"
+          android:icon="@drawable/ic_supervisor_account_black_24dp"
+          android:title="Counsellor" />
+        <item
+          android:id="@+id/nav_search"
+          android:icon="@drawable/ic_search_black_24dp"
+          android:title="Search" />
+
+
+    </group>
+
+
+    <group android:checkableBehavior="single">
+        <item android:title="Social media">
+            <menu>
+                <item
+                  android:id="@+id/nav_facebook"
+                  android:icon="@drawable/fb_icon"
+                  android:title="Facebook" />
+
+                <item
+                  android:id="@+id/nav_linkin"
+                  android:icon="@drawable/linkedin_icon"
+                  android:title="Linked in" />
+            </menu>
+        </item>
+
+
+    </group>
+
+
+    <item android:title="Communicate" >
+
+        <menu>
+
+            <item
+              android:id="@+id/nav_logout"
+              android:icon="@drawable/ic_error_black_24dp"
+              android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>
+
+

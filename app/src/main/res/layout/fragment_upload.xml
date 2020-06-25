@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UploadFragment"
+    android:background="@drawable/backgroundresponsive">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tvp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="PERSONAL PROFILE"
+        android:textStyle="bold"
+
+        android:textColor="@color/colorPrimaryDark"
+        android:padding="10dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/tvuser"
+        app:layout_constraintTop_toBottomOf="@+id/tvp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="Hello"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#fff"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/tvwe"
+        app:layout_constraintTop_toBottomOf="@id/tvuser"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:padding="5dp"
+        android:text="Welcome to the CareerNaksha Dashboard
+We'd like to get to know you a little better."
+        android:textSize="15sp"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        app:layout_constraintTop_toBottomOf="@id/tvwe"
+        android:id="@+id/ivupload"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/upload"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:id="@+id/cvupload"
+        app:layout_constraintTop_toBottomOf="@id/ivupload"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:cardCornerRadius="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/regbut">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="UPLOAD DOCUMENT"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:layout_marginLeft="28dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/tvinclude"
+        app:layout_constraintTop_toBottomOf="@id/cvupload"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="These can include scanned copies of your Resume,CV ,Background and Bio Profile etc"
+        android:textColor="@color/colorPrimaryDark"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/tvinclude"
+        android:textColor="#fff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/tvfile"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

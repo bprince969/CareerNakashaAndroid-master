@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/backgroundresponsive"
+  android:orientation="vertical"
+  tools:context=".BasicFragment">
+
+  <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="10dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+      <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/regbut"
+        android:orientation="vertical">
+        <TextView
+          android:textStyle="bold"
+          android:layout_width="50dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="0dp"
+
+          android:layout_gravity="center"
+          android:padding="5dp"
+          android:text="03"
+          android:textColor="#fff"
+          android:textSize="30sp" />
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="40dp"
+          android:layout_gravity="center"
+          android:padding="5dp"
+          android:text="Educational Infromation"
+          android:textColor="#fff"
+          android:textSize="15sp" />
+
+
+      </LinearLayout>
+
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+          <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+              android:id="@+id/be"
+              android:textStyle="bold"
+              android:layout_width="180dp"
+              android:layout_height="45dp"
+              android:layout_marginTop="10dp"
+              android:background="@drawable/regbut"
+              android:text="Save and Proceed"
+              android:textColor="#fff"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/ivedit11" />
+            <ImageView
+              android:id="@+id/ivedit1"
+              android:layout_width="265dp"
+              android:layout_height="55dp"
+              android:layout_marginTop="20dp"
+              android:src="@drawable/regbut"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+              android:id="@+id/ivedit2"
+              android:layout_width="265dp"
+              android:layout_height="55dp"
+              android:layout_marginTop="5dp"
+              android:src="@drawable/regbut"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/ivedit1" />
+            <ImageView
+              android:id="@+id/ivedit3"
+              android:layout_width="265dp"
+              android:layout_height="55dp"
+              android:layout_marginTop="5dp"
+              android:src="@drawable/regbut"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/tvbachelor" />
+            <ImageView
+              android:id="@+id/ivedit4"
+              android:layout_width="265dp"
+              android:layout_height="55dp"
+              android:layout_marginTop="5dp"
+              android:src="@drawable/regbut"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/ivedit3" />
+            <ImageView
+              android:id="@+id/ivedit5"
+              android:layout_width="265dp"
+              android:layout_height="55dp"
+              android:layout_marginTop="5dp"
+              android:src="@drawable/regbut"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/tvmasters" />
+            <ImageView
+              android:id="@+id/ivedit6"
+              android:layout_width="265dp"
+              android:layout_height="55dp"
+              android:layout_marginTop="5dp"
+              android:src="@drawable/regbut"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/ivedit5" />
+            <ImageView
+              android:id="@+id/ivedit7"
+              android:layout_width="265dp"
+              android:layout_height="55dp"
+              android:layout_marginTop="5dp"
+              android:src="@drawable/regbut"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/ivedit6" />
+            <ImageView
+              android:id="@+id/ivedit8"
+              android:layout_width="265dp"
+              android:layout_height="55dp"
+              android:layout_marginTop="5dp"
+              android:src="@drawable/regbut"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/ivedit7" />
+
+            <ImageView
+              android:id="@+id/ivedit9"
+              android:layout_width="265dp"
+              android:layout_height="55dp"
+              android:layout_marginTop="5dp"
+              android:src="@drawable/regbut"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/ivedit8" />
+
+
+            <ImageView
+              android:id="@+id/ivedit10"
+              android:layout_width="265dp"
+              android:layout_height="55dp"
+              android:layout_marginTop="5dp"
+              android:src="@drawable/regbut"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/ivedit9" />
+            <ImageView
+              android:id="@+id/ivedit11"
+              android:layout_width="265dp"
+              android:layout_height="55dp"
+              android:layout_marginTop="5dp"
+              android:src="@drawable/regbut"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/ivedit10" />
+
+            <TextView
+              android:id="@+id/tvbachelor"
+              android:textStyle="bold"
+              android:layout_width="200dp"
+              android:layout_height="30dp"
+              android:layout_marginLeft="20dp"
+              android:gravity="center_vertical"
+              android:text="Bachelor's Degree"
+              android:textColor="#18d9ac"
+              android:textSize="15sp"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/ivedit2" />
+            <TextView
+              android:id="@+id/tvmasters"
+              android:textStyle="bold"
+              android:layout_width="200dp"
+              android:layout_height="30dp"
+              android:layout_marginLeft="20dp"
+              android:gravity="center_vertical"
+              android:text="Masters's Degree"
+              android:textColor="#18d9ac"
+              android:textSize="15sp"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/ivedit4" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="261dp"
+              android:layout_height="45dp"
+              android:layout_marginTop="24.5dp"
+              android:background="#fff"
+              android:gravity="center"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toTopOf="parent">
+              <EditText
+                android:id="@+id/ee1"
+                android:layout_width="265dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="12.5dp"
+                android:layout_marginLeft="5dp"
+                android:background="#fff"
+                android:hint="  High School/10th Grade Subjects"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="261dp"
+              android:layout_height="45dp"
+              android:layout_marginTop="10dp"
+              android:background="#fff"
+              android:gravity="center"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+
+              app:layout_constraintTop_toBottomOf="@id/ivedit1">
+              <EditText
+                android:id="@+id/ee2"
+                android:layout_width="265dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="5dp"
+                android:background="#fff"
+
+                android:hint="  College/12th Grade Subjects"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivedit1" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="261dp"
+              android:layout_height="45dp"
+              android:layout_marginTop="10dp"
+              android:background="#fff"
+              android:gravity="center"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/tvbachelor">
+              <EditText
+                android:id="@+id/ee3"
+                android:layout_width="262dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:background="#fff"
+                android:hint="  Field Of Study"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvbachelor" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="261dp"
+              android:layout_height="45dp"
+              android:layout_marginTop="10dp"
+              android:background="#fff"
+              android:gravity="center"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/ivedit3"
+
+              >
+              <EditText
+                android:id="@+id/ee4"
+                android:layout_width="265dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="5dp"
+                android:background="#fff"
+                android:hint="  University/College Name"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivedit3" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="261dp"
+              android:layout_height="45dp"
+              android:layout_marginTop="10dp"
+              android:background="#fff"
+              android:gravity="center"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/tvmasters"
+
+              >
+              <EditText
+                android:id="@+id/ee5"
+                android:layout_width="265dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="5dp"
+                android:background="#fff"
+                android:hint="  Field of Study"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvmasters" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="261dp"
+              android:layout_height="45dp"
+              android:layout_marginTop="10dp"
+              android:background="#fff"
+              android:gravity="center"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/ivedit5"
+
+              >
+              <EditText
+                android:id="@+id/ee6"
+                android:layout_width="265dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="5dp"
+                android:background="#fff"
+                android:hint="  University/College Name"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivedit5" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="261dp"
+              android:layout_height="45dp"
+              android:layout_marginTop="10dp"
+              android:background="#fff"
+              android:gravity="center"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/ivedit6"
+
+              >
+              <EditText
+                android:id="@+id/ee7"
+                android:layout_width="265dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="5dp"
+                android:background="#fff"
+                android:hint="  GRE Score"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivedit6" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="261dp"
+              android:layout_height="45dp"
+              android:layout_marginTop="10dp"
+              android:background="#fff"
+              android:gravity="center"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/ivedit7"
+
+              >
+              <EditText
+                android:id="@+id/ee8"
+                android:layout_width="265dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="5dp"
+                android:background="#fff"
+                android:hint="  GMAT Score"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivedit7" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="261dp"
+              android:layout_height="45dp"
+              android:layout_marginTop="10dp"
+              android:background="#fff"
+              android:gravity="center"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/ivedit8"
+
+              >
+              <EditText
+                android:id="@+id/ee9"
+                android:layout_width="265dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="5dp"
+                android:background="#fff"
+                android:hint="  IELTS Score"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivedit8" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="261dp"
+              android:layout_height="45dp"
+              android:layout_marginTop="10dp"
+              android:background="#fff"
+              android:gravity="center"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/ivedit9"
+
+
+              >
+              <EditText
+                android:id="@+id/ee10"
+                android:layout_width="265dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="5dp"
+                android:background="#fff"
+                android:hint="  TOEFL Score"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivedit9" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="261dp"
+              android:layout_height="45dp"
+              android:layout_marginTop="10dp"
+              android:background="#fff"
+              android:gravity="center"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/ivedit10"
+
+              >
+              <EditText
+                android:id="@+id/ee11"
+                android:layout_width="265dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="5dp"
+                android:background="#fff"
+                android:hint="  Additional Qualification"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivedit10" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+          </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+      </LinearLayout>
+
+
+    </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,157 @@
+{
+  "project_info": {
+    "project_number": "721609062983",
+    "firebase_url": "https://careernaksha-47c94.firebaseio.com",
+    "project_id": "careernaksha-47c94",
+    "storage_bucket": "careernaksha-47c94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721609062983:android:e99a660046db2e5b",
+        "android_client_info": {
+          "package_name": "com.careernaksha.careernaksha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "721609062983-5c7ne56p697jfo41a5cnsl1udihed5j6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.careernaksha.careernaksha",
+            "certificate_hash": "3b362f1dddb3874ff7d18e287045f6b0588f73b2"
+          }
+        },
+        {
+          "client_id": "721609062983-5uc3hsjrndik9abhara9gh0g5j3lj0pp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.careernaksha.careernaksha",
+            "certificate_hash": "924d92f81e217864009b5a7fba9b1f1b0775c0a9"
+          }
+        },
+        {
+          "client_id": "721609062983-mb5gfstgs0cf0sv36lb0t57rf0kgu6dp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.careernaksha.careernaksha",
+            "certificate_hash": "145351d34cd3bc6459973ffb8d46d2fbaebdbd4e"
+          }
+        },
+        {
+          "client_id": "721609062983-vrflin68oifllcrn5igftjksf8uafhqr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.careernaksha.careernaksha",
+            "certificate_hash": "d7a91ee0b4e68251b134a73bfd1ca55e1999d949"
+          }
+        },
+        {
+          "client_id": "721609062983-c73cjbkogrmfuqv2qpvgtnrud50b7asl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.careernaksha.careernaksha",
+            "certificate_hash": "f9224a18eedeab757a80cf1757a8d8c9f6fe4c22"
+          }
+        },
+        {
+          "client_id": "721609062983-oocs6b9jmh8fv5cun8jmvib3fgvg4nvp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.careernaksha.careernaksha",
+            "certificate_hash": "4f60b6320d06b182bbb13b8006e3f00f989b6b95"
+          }
+        },
+        {
+          "client_id": "721609062983-98anptnb56od0g56b8qg7q09kj1j9b12.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhLeq-QFOaf732sfmEhrDRBOkR7gUvkQI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "721609062983-98anptnb56od0g56b8qg7q09kj1j9b12.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721609062983:android:6a52a364589fda7d",
+        "android_client_info": {
+          "package_name": "com.deucate.careernaksha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "721609062983-42c5sbeptjiqtj1qjemsra4rv0bmstdu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.deucate.careernaksha",
+            "certificate_hash": "3b362f1dddb3874ff7d18e287045f6b0588f73b2"
+          }
+        },
+        {
+          "client_id": "721609062983-g9o5493ojc4fs9a4pi2lv4t4vs0kvb2c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.deucate.careernaksha",
+            "certificate_hash": "924d92f81e217864009b5a7fba9b1f1b0775c0a9"
+          }
+        },
+        {
+          "client_id": "721609062983-6quk4cavn2iddto7htn1s6pkfq2c7ipe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.deucate.careernaksha",
+            "certificate_hash": "4f60b6320d06b182bbb13b8006e3f00f989b6b95"
+          }
+        },
+        {
+          "client_id": "721609062983-9hfa2716du2mdfhedvsh05uhpr24nsoa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.deucate.careernaksha",
+            "certificate_hash": "6cf6f6b5e0cf974cb991fe420fa280762ab33bd1"
+          }
+        },
+        {
+          "client_id": "721609062983-610gi5b61egq4d99pervn5dfkngcmji8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.deucate.careernaksha",
+            "certificate_hash": "47938b70486cbffacda9cdb93e4673feca0adf90"
+          }
+        },
+        {
+          "client_id": "721609062983-98anptnb56od0g56b8qg7q09kj1j9b12.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhLeq-QFOaf732sfmEhrDRBOkR7gUvkQI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "721609062983-98anptnb56od0g56b8qg7q09kj1j9b12.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

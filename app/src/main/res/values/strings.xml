@@ -1,0 +1,26 @@
+<resources>
+  <string name="app_name">CareerNaksha</string>
+  <string name="title_activity_profile">ProfileActivity</string>
+  <string name="navigation_drawer_open">Open navigation drawer</string>
+  <string name="navigation_drawer_close">Close navigation drawer</string>
+  <string name="nav_header_title">Android Studio</string>
+  <string name="nav_header_subtitle">android.studio@android.com</string>
+  <string name="nav_header_desc">Navigation header</string>
+  <string name="action_settings">Settings</string>
+
+  <string name="facebook_app_id">2228447410549918</string>
+  <string name="fb_login_protocol_scheme">fb2228447410549918</string>
+
+  <string name="twitter_consumer_key" translatable="false">JhWGuxZ1w05hllqq00QZHMXJO</string>
+  <string name="twitter_consumer_secret" translatable="false">fDMhNaGxLgPj63E4WgmWgTLQ4sQ9Mk0UB7LParFgex64EcTzR0</string>
+
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">No data found</string>
+  <string name="title_activity_fbtest">fbtest</string>
+  <!--<string name="default_web_client_id">721609062983-98anptnb56od0g56b8qg7q09kj1j9b12.apps.googleusercontent.com</string>-->
+  <string name="expertise">Expertise :</string>
+  <string name="summery">Summary :</string>
+  <string name="field_focus">Field Focus :</string>
+  <string name="phone_number">Phone number</string>
+
+</resources>
