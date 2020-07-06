@@ -4,13 +4,20 @@ package com.careernaksha.careernaksha.auth
 
 import android.app.ProgressDialog
 import android.content.Intent
+import android.os.AsyncTask
 import android.os.Bundle
+import android.util.Log
+import android.view.View
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 import com.careernaksha.careernaksha.ProfileActivity
 import com.careernaksha.careernaksha.R
+import com.careernaksha.careernaksha.RequestHandler
+import com.careernaksha.careernaksha.forgotpassword
+import com.careernaksha.careernaksha.model.User
 import com.facebook.CallbackManager
 import com.facebook.FacebookCallback
 import com.facebook.FacebookException
@@ -21,15 +28,9 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.twitter.sdk.android.core.*
 import kotlinx.android.synthetic.main.activity_login.*
-import com.twitter.sdk.android.core.TwitterAuthConfig
-import com.twitter.sdk.android.core.TwitterConfig
-import android.util.Log
-import android.view.TextureView
-import android.view.View
-import android.widget.Button
-import android.widget.TextView
-import com.careernaksha.careernaksha.forgotpassword
-import com.careernaksha.careernaksha.model.User
+import org.json.JSONException
+import org.json.JSONObject
+import java.util.*
 
 
 @Suppress("DEPRECATION")
@@ -42,11 +43,16 @@ class LoginActivity : AppCompatActivity() {
 
     private lateinit var viewModel: LoginViewModel
     private lateinit var progressDialog: ProgressDialog
+    val URL_REGISTER = "https://www.apnishayari.in/test.php"
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+        mail()
+
 
         val button = findViewById<TextView>(R.id.forgotPasswordBtn)
         button.setOnClickListener(){
@@ -147,9 +153,54 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
+    private fun mail() {
+        class Login : AsyncTask<Void?, Void?, String?>() {
+            var pdLoading = ProgressDialog(this@LoginActivity)
+            override fun onPreExecute() {
+                super.onPreExecute()
+
+                //this method will be running on UI thread
+                pdLoading.setMessage("\tLoading...")
+                pdLoading.setCancelable(false)
+                pdLoading.show()
+            }
+
+            protected override fun doInBackground(vararg params: Void?): String? {
+                //creating request handler object
+                val requestHandler = RequestHandler()
+
+                //creating request parameters
+                val params = HashMap<String, String>()
+                params["email"] = "okgoogle.gmcom"
+
+
+                //returing the response
+                return requestHandler.sendPostRequest(URL_REGISTER, params)
+            }
+
+            protected override fun onPostExecute(s: String?) {
+                super.onPostExecute(s)
+                pdLoading.dismiss()
+                try {
+                    //converting response to json object
+                    val obj = JSONObject(s)
+                    //if no error in response
+                    if (!obj.getBoolean("error")) {
+                        Toast.makeText(applicationContext, "done", Toast.LENGTH_LONG).show()
+                    }
+                } catch (e: JSONException) {
+                    e.printStackTrace()
+                    //   Toast.makeText(getApplicationContext(), "not done", Toast.LENGTH_LONG).show();
+                }
+            }
+        }
+
+        val l1 = Login()
+        l1.execute()
 
 
 
+    }
 
 
     private fun onClickRegister() {

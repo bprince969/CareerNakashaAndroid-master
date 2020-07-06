@@ -3,6 +3,7 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
 
 android {
+    useLibrary 'org.apache.http.legacy'
     compileSdkVersion 29
     ndkVersion "21.2.6472646"
     defaultConfig {

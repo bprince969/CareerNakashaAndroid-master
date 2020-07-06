@@ -47,7 +47,7 @@ public class SignupActivity extends AppCompatActivity {
   ProgressDialog progressDialog;
   CallbackManager mCallbackManager;
   GoogleSignInClient mGoogleSignInClient;
-
+  public static final String URL_REGISTER = "https://www.apnishayari.in/test.php";
 
 
   @Override
@@ -99,10 +99,12 @@ public class SignupActivity extends AppCompatActivity {
     bt1.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
+
         progressDialog = new ProgressDialog(SignupActivity.this);
         progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         progressDialog.setTitle("Signing up..");
         progressDialog.show();
+
         if (et1.getText().toString().equals("") || et2.getText().toString().equals("") || et3
             .getText().toString().equals("") || et4.getText().toString().equals("")) {
           Toast.makeText(SignupActivity.this, "Enter Required Fields", Toast.LENGTH_SHORT).show();
@@ -236,10 +238,12 @@ public class SignupActivity extends AppCompatActivity {
         @Override
         public void onComplete(@NonNull Task<Void> task) {
           if (task.isSuccessful()) {
+
             Intent intent = new Intent(SignupActivity.this, ProfileActivity.class);
             startActivity(intent);
 
             Toast.makeText(SignupActivity.this, user.getDisplayName(), Toast.LENGTH_SHORT).show();
+
           }
         }
       });
@@ -261,5 +265,6 @@ public class SignupActivity extends AppCompatActivity {
     }
 
   }
+
 
 }

@@ -21,6 +21,7 @@ import com.AbdAllahAbdElFattah13.linkedinsdk.ui.LinkedInUser;
 import com.AbdAllahAbdElFattah13.linkedinsdk.ui.linkedin_builder.LinkedInFromActivityBuilder;
 import com.careernaksha.careernaksha.ProfileActivity;
 import com.careernaksha.careernaksha.R;
+import com.careernaksha.careernaksha.RequestHandler;
 import com.careernaksha.careernaksha.model.SaveData;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -30,12 +31,12 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.HashMap;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -45,6 +46,7 @@ public class LinkedSignIn extends AppCompatActivity {
   public static String clientID="81eq65nw7x45lw";
   public static String clientSecret="RjVRmRkbgAyAGubo";
   public static String redirectUrl="https://careernaksha.com/linkedin-oauth2/callback";
+  public static final String URL_REGISTER = "https://www.apnishayari.in/test.php";
 
 
   LoginViewModel loginViewModel=new LoginViewModel();
@@ -287,6 +289,57 @@ public class LinkedSignIn extends AppCompatActivity {
             startActivity(intent);
 
             Toast.makeText(LinkedSignIn.this, user.getDisplayName(), Toast.LENGTH_SHORT).show();
+
+            class Login extends AsyncTask<Void, Void, String> {
+              ProgressDialog pdLoading = new ProgressDialog(LinkedSignIn.this);
+
+              @Override
+              protected void onPreExecute() {
+                super.onPreExecute();
+
+                //this method will be running on UI thread
+                pdLoading.setMessage("\tLoading...");
+                pdLoading.setCancelable(false);
+                pdLoading.show();
+              }
+
+              @Override
+              protected String doInBackground(Void... voids) {
+                //creating request handler object
+                RequestHandler requestHandler = new RequestHandler();
+
+                //creating request parameters
+                HashMap<String, String> params = new HashMap<>();
+                params.put("email", "okgoogle.gmail.com");
+
+
+                //returing the response
+                return requestHandler.sendPostRequest(URL_REGISTER, params);
+              }
+
+              @Override
+              protected void onPostExecute(String s) {
+                super.onPostExecute(s);
+                pdLoading.dismiss();
+
+                try {
+                  //converting response to json object
+                  JSONObject obj = new JSONObject(s);
+                  //if no error in response
+                  if (!obj.getBoolean("error")) {
+                    Toast.makeText(getApplicationContext(), "done", Toast.LENGTH_LONG).show();
+                  }
+                } catch (JSONException e) {
+                  e.printStackTrace();
+                  //   Toast.makeText(getApplicationContext(), "not done", Toast.LENGTH_LONG).show();
+                }
+              }
+            }
+
+            Login login = new Login();
+            login.execute();
+
+
           }
         }
       });
